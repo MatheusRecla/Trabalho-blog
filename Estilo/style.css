@@ -1,0 +1,153 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --color: #464646;
+    --color2: #111111;
+    
+    --fonte-padrao:arial, Verdana, Helvetica, sans-serif;
+
+
+}
+
+
+body{
+    background-color: antiquewhite;
+    background-image: url("/Imagens/FUNDO.png");
+    background-repeat: repeat;
+}  
+header{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--color), var(--color2));
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+header div{
+    justify-content: center;
+    width: 40%;
+    padding-top: 3%;
+    text-align: center;
+    color: aliceblue;
+}
+header p{
+    padding: 5px;
+    text-align: center;
+    color: aliceblue;
+}
+
+nav{
+    background-color: var(--color2);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.377);
+}
+nav a{
+    color:aliceblue;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: var(--color);
+    color:aliceblue;
+    border-radius: 5px;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main p {
+    margin:15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+footer p{
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+}
+
+footer{
+    background-position: bottom;
+}
+
+.links{
+    text-decoration: none;
+    color: #111111;
+    font-size: 0.9em;
+}
+
+
+
+.links:hover{
+    text-decoration: underline;
+
+}
+
+.links::after{
+    content: "🔗";
+}
+
+li{
+    margin:15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+h2{
+    text-align: center;
+}
+.uniube{
+    width: 100px;
+    position: fixed;
+    left: 0pt;
+}
+aside{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.308);
+}
+
+aside > ol{
+    list-style-position: inside;
+    
+}
+aside >h3{
+    background-color: rgb(230, 230, 230);
+    color:#000000 ;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+ul{
+    list-style-position: inside;
+    padding-left: 10px;
+}
+.sub{
+    text-align: center;
+}
